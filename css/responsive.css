@@ -1,0 +1,1129 @@
+/*
+Theme Name: Yoox
+Theme URI: http://layerdrops.com/
+Author: Layerdrops
+Author URI: http://layerdrops.com/
+Description: Yoox - Fine One Page Parallax HTML5 Responsive Template
+Version: 1.0
+License:
+License URI:
+*/
+
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+
+1. Mobile Responsive
+    a. Mobile Responsive 2
+    b. Mobile Responsive 3
+2. Small Device
+3. Responsive For Small Device
+4. Responsive For large Device
+    a. Responsive For large Device 02
+5. Responsive For Extra large Device
+
+*/
+
+
+/*------------------------------------------------------------------------------------
+/ 1. Mobile Responsive. Responsive For Extra Small Device like: Mobile, Iphone etc
+--------------------------------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 767px){
+    .mainMenu{
+        padding: 0;
+        margin: 0 -15px;
+    }
+    .mainMenu > ul {
+        text-align: center;
+        display: none;
+        position: absolute;
+        z-index: 10;
+        background: rgba(17, 17, 17, 0.98);
+        left: 0;
+        top: 16px;
+        padding: 20px 15px 20px;
+        height: 315px;
+        width: 100%;
+        overflow-y: scroll;
+        border-top: 1px solid rgba(255, 255, 255, .05);
+    }
+    .mainMenu ul li {
+        display: block;
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+    } 
+    .mainMenu ul ul.sub-menu li:last-child,
+    .mainMenu ul li:last-child{
+        padding-bottom: 0;
+    }
+    .fixedHeader .mainMenu ul li{
+        padding: 0 0 20px;
+    }
+    .mainMenu ul ul.sub-menu {
+        display: none;
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        top: 0;
+        left: auto;
+        margin: 0;
+        background: transparent;
+        height: auto;
+        padding: 20px 0 0;
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        box-shadow: none;
+    }
+    .mainMenu ul li:hover ul.sub-menu {
+        visibility: visible;
+        top: 0;
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+    }
+    .mainMenu ul ul.sub-menu:before{
+        display: none;
+    }
+    .mainMenu > ul > li.menu-item-has-children > a{
+        position: relative;
+    }
+    .mainMenu > ul > li.menu-item-has-children > a:after{
+        position: absolute;
+        right: -18px;
+        top: 3px;
+        content: "\f107";
+        transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+        font-family: 'fontAwesome';
+        font-size: 12px;
+        color: #fff;
+        line-height: .8;
+    }
+    .mainMenu > ul > li.menu-item-has-children > a:hover:after,
+    .mainMenu > ul > li.menu-item-has-children.active > a:after{
+        transform: rotate(-180deg);
+        color: #0038e3;
+    }
+    .mainMenu ul ul.sub-menu li a{
+        color: #fff;
+    }
+    .mainMenu ul ul.sub-menu li a:hover{
+        color: #0038e3;
+    }
+    .fixedHeader .mainMenu ul ul.sub-menu,
+    .fixedHeader .mainMenu ul li:hover ul.sub-menu{
+        top: 0;
+    }
+    .navigator_right .mobilemenu.active,
+    .navigator_right:hover .mobilemenu{
+        color: #0038e3;
+    }
+    .header_02 .navigator_right{
+        padding: 0;
+        margin-top: -50px;
+    }
+    .mobileCenter{
+        text-align: center;
+    }
+    .section_subtitle{
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    .fixedLineHeight{
+        text-align: center;
+    }
+    .section_title{
+        font-size: 36px;
+    }
+    .section_desc br{
+        display: none;
+    }
+    .discover_yoox{
+        padding: 0;
+    }
+    .dy_img1{
+        position: relative;
+        right: auto;
+    }
+    .dy_img2 img,
+    .dy_img1 img{
+        width: 100%;
+    }
+    .discover_content{
+        position: relative;
+        left: auto;
+        width: 100%;
+    }
+    .icon_box_1{
+        margin: 0 0 30px;
+    }
+    .box_inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .testimonial_icon{
+        margin-bottom: 30px;
+    }
+    .testimonial_item p{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    .abc_inner{
+        margin: 0;
+    }
+    .abc_btn_col{
+        padding-top: 30px;
+    }
+    .abci_content{
+        padding: 30px 0;
+    }
+    .abci_content h2{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .singlefunfact{
+        margin: 0 0 30px;
+    }
+    .subscripform{
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+    .subscripform h4{
+        line-height: 30px;
+    }
+    .latestBlogItem{
+        margin: 0 0 30px;
+    }
+    .lbi_details{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .lbi_details .lbid_date{
+        left: 15px;
+    }
+    .lbi_details h2{
+        font-size: 28px;
+    }
+    .singlePricingTable{
+        margin: 0 0 30px;
+    }
+    .readysection .section_title{
+        line-height: 40px;
+        margin: 0 0 30px;
+    }
+    .readysection .common_btn{
+        float: left;
+    }
+    .leftjoin, .rightjoin{
+        padding: 0;
+    }
+    .rightjoin .common_btn,
+    .leftjoin .common_btn{
+        margin-bottom: 40px;
+    }
+    .rightjoin h2, .leftjoin h2{
+        margin-top: 30px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .leftjoin .pdLeft_50, .rightjoin .pdLeft_50{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .footer_1{
+        padding-bottom: 100px;
+    }
+    .foo_social{
+        padding-bottom: 20px;
+    }
+    .footer_1 p{
+        padding-bottom: 20px;
+    }
+    .gmap{
+        height: 300px;
+    }
+    .nextprevPagination{
+        padding: 30px 0 32px;
+        margin-top: 50px;
+    }
+    .yoox_paginations a, .yoox_paginations span{
+        margin-bottom: 5px;
+    }
+    .lbiBig .lbi_details h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .sidebar{
+        margin-top: 50px;
+    }
+    .sidebar .widget{
+        padding: 50px 20px;
+    }
+    .blog_headings .blog_date{
+        left: 20px;
+    }
+    .postSocial{
+        margin-top: 30px;
+        text-align: left;
+    }
+    .post_author{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .post_author img{
+        margin-bottom: 30px;
+        margin-right: 100%;
+        display: block;
+    }
+    .post_author h3{
+        margin-bottom: 15px;
+    }
+    .single-comment{
+        padding-left: 100px;
+        padding-right: 0;
+    }
+    .single-comment img{
+        width: 80px;
+        height: 80px;
+    }
+    .single-comment a.commentReply{
+        position: relative;
+        top: 25px;
+    }
+    .single-comment .authorDetails span{
+        margin-bottom: 15px;
+    }
+    .sidebarSlider{
+        width: 100%;
+        position: relative;
+    }
+    .readycontact{
+        position: relative;
+        padding: 60px 15px 50px;
+    }
+    .socialLink{
+        transform: none;
+        top: 40px;
+        z-index: 2;
+    }
+    .socialLink a:last-of-type{
+        margin-right: 0;
+    }
+    .tp-bullets.custom.horizontal.nav-pos-hor-left{
+        left: 15px !important;
+    }
+    .tp-bullets.custom.horizontal.nav-pos-hor-right{
+        left: auto !important;
+        right: 77px;
+    }
+    .tp-bullets.custom .tp-bullet{
+        bottom: 115px;
+    }
+    .slider .leftText{
+        padding: 0 10px !important;
+    }
+    .portfolioPopUp{
+        display: none;
+    }
+    .popUpvideo a.video_link{
+        width: 60px;
+        height: 60px;
+        padding: 21px 0 19px 5px;
+    }
+    .tp-caption.sliderPopThumb img{
+        width: 300px !important;
+        height: auto !important;
+    }
+    .logo2{
+        left: 15px;
+    }
+    .footer__contacts{
+        padding: 0;
+        text-align: center;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .footer__contacts li{
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    .popUp_social{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        right: auto;
+        bottom: 30px;
+        text-align: center;
+
+    }
+    .popUp_social a{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        padding: 7px 0;
+    }
+    .popUp_social a:last-child{
+        margin-right: 0;
+    }
+    .close-popup{
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    .close-popup:after,
+    .close-popup:before{
+        right: 12px;
+        top: 20px;
+    }
+    .dl-menu__wrap ul li{
+        margin: 5px 0;
+    }
+    .container.mobileContainer{
+        width: 100%;
+    }
+    .SearchForm button[type="submit"]{
+        width: 90px;
+    }
+    .SearchForm input[type="search"]{
+        padding-left: 15px;
+    }
+    .showit{
+        right: 30px;
+        bottom: 30px;
+    }
+    .closePopUp{
+        width: 20px;
+        height: 20px;
+        top: 18px;
+        right: 22px;
+    }
+    .folio_slider{
+        margin-top: 1px;
+    }
+    .folio_slider .owl-nav .owl-prev, 
+    .folio_slider .owl-nav .owl-next{
+        width: 30px;
+        height: 30px;
+        padding: 6px 0;
+        font-size: 16px;
+    }
+    .folio_slider .owl-nav .owl-prev{
+        left: 10px;
+    }
+    .folio_slider .owl-nav .owl-next{
+        right: 10px;
+    }
+    .portdescrip{
+        padding-left: 0;
+    }
+    .portdescrip .common_btn{
+        height: 60px;
+        padding: 21px 0;
+    }
+    .portdescrip span{
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .portdescrip h3{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 19px;
+    }
+    .navigator_right .social_menu{
+        margin-right: 10px;
+    }
+    .home_content{
+        padding: 0;
+    }
+    .home_content h5{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .home_content h2{
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+    .singleAB{
+        margin-bottom: 25px;
+    }
+    .singleAB h5{
+        font-size: 18px;
+    }
+    .singleAB h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .story_content{
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .story_content h2{
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .story_content p{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .singlefunfact.transparent_bg{
+        margin-bottom: 15px;
+    }
+    .singlefunfact.transparent_bg h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .singlefunfact.transparent_bg h3{
+        font-size: 18px;
+    }
+    .whatDo_content h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .whoare_content h2{
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+    .whoare_content p{
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    .whoare_content h3{
+        font-size: 30px;
+    }
+/*    .slider .slotholder .tp-bgimg.defaultimg {
+        background-size: auto !important;
+        background-position: left bottom !important;
+        overflow: hidden;
+        transition-duration: 0ms;
+    }*/
+}
+
+
+/*------------------------------------------------------------------------------------
+/ 1.a. Mobile Responsive 2.
+--------------------------------------------------------------------------------------*/
+@media (min-width: 400px) and (max-width: 480px){
+    .tp-caption.leftText{
+        left: -15px;
+    }
+}
+
+/*------------------------------------------------------------------------------------
+/ 1.b. Mobile Responsive 3.
+--------------------------------------------------------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px){
+    .gmap{
+        height: 350px;
+    }
+    .leftjoin .pdLeft_50, .rightjoin .pdLeft_50{
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+}
+
+/*----------------------------------------------
+/ 2. Responsive For Small Device.  like: Tab
+-----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 990px){
+    .mainMenu ul li{
+        margin-right: 25px;
+    }
+    .mainMenu ul li a{
+        font-size: 16px;
+    }
+    .mainMenu ul ul.sub-menu{
+        width: 200px;
+    }
+    .header_02 .navigator_right a{
+        font-size: 22px;
+    }
+    .sidebarSlider{
+        width: 100%;
+        position: relative;
+    }
+    .readycontact{
+        position: relative;
+        padding: 65px 60px 50px;
+    }
+    .socialLink{
+        transform: none;
+        top: 40px;
+        z-index: 2;
+    }
+    .socialLink a:last-of-type{
+        margin-right: 0;
+    }
+    .readycontact .common_btn{
+        width: 178px;
+    }
+    .logo2{
+        left: 20px;
+    }
+    .popUp_social{
+        right: 20px;
+    }
+    .discover_yoox{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .dy_img1{
+        position: relative;
+        right: auto;
+    }
+    .discover_content{
+        left: 0;
+    }
+    .icon_box_1{
+        margin-bottom: 30px;
+    }
+    .box_inner{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .testimonial_item p{
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .abci_content{
+        padding: 30px 0 27px 30px;
+    }
+    .abci_content h2{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .abc_inner{
+        margin-top: -150px;
+    }
+    .abc_btn_col{
+        padding-top: 190px;
+    }
+    .singlefunfact{
+        margin-bottom: 30px;
+    }
+    .subscripform{
+        margin-bottom: 50px;
+    }
+    .latestBlogItem{
+        margin-bottom: 30px;
+    }
+    .lbi_details{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .lbi_details .lbid_date{
+        left: 30px;
+    }
+    .singlePricingTable{
+        margin-bottom: 30px;
+    }
+    .readysection .section_title{
+        font-size: 36px;
+    }
+    .gmap{
+        height: 400px;
+    }
+    .leftjoin{
+        padding-right: 0;
+    }
+    .rightjoin{
+        padding-right: 0;
+    }
+    .rightjoin h2, .leftjoin h2{
+        margin-top: 30px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .leftjoin .common_btn,
+    .rightjoin .common_btn{
+        margin-bottom: 40px;
+    }
+    .leftjoin .pdLeft_50, 
+    .rightjoin .pdLeft_50{
+        padding-right: 50px;
+    }
+    .footer_1 p{
+        margin-bottom: 30px;
+    }
+    .sidebar{
+        margin-top: 50px;
+    }
+    .yoox_post_widget .ypw_item{
+        padding-bottom: 39px;
+    }
+    .tp-bullets.custom.horizontal.nav-pos-hor-right{
+        left: auto !important;
+        right: 70px;
+    } 
+    .portfolioPopUp .container{
+        width: 600px;
+    }
+    .folio_slider{
+        margin-top: 2px;
+    }
+    .folio_slider .owl-nav .owl-prev, 
+    .folio_slider .owl-nav .owl-next{
+        width: 40px;
+        height: 40px;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .portdescrip{
+        padding-left: 30px;
+    }
+    .portdescrip .common_btn{
+        height: 80px;
+        padding: 32px 0;
+        margin-left: 1px;
+    }
+    .portdescrip span{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .portdescrip h3{
+        font-size: 24px;
+    }
+    .fixednavHeader{
+        right: 15px;
+    }
+    .fixednavHeader li a span{
+        letter-spacing: 1px;
+    }
+    .home_content{
+        padding: 0 50px;
+    }
+    .singleAB{
+        margin-bottom: 35px;
+    }
+    .singleAB h2{
+        font-size: 70px;
+    }
+    .home_content h2{
+        font-size: 42px;
+        line-height: 44px;
+    }
+    .story_content{
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+    .story_content h2{
+        font-size: 42px;
+        line-height: 44px;
+    }
+    .story_content p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .whatDo_content{
+        padding-right: 40px;
+    }
+    .whatDo_content h2{
+        font-size: 42px;
+        line-height: 60px;
+    }
+    .whoare_content h2{
+        font-size: 42px;
+        line-height: 44px;
+    }
+    .whoare_content p{
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0 50px;
+    }
+    .slider .tp-parallax-wrap{
+        left: 0 !important;
+    }
+}
+
+/*-------------------------------------------------------------------------
+/ 3. Responsive For Medium Device. like: Desktop with 1024px resolution
+----------------------------------------------------------------------------*/
+@media (min-width: 991px) and (max-width: 1199px){
+    .mainMenu ul li{
+        margin-right: 35px;
+    }
+    .mainMenu ul ul.sub-menu{
+        width: 200px;
+    }
+
+    .sidebarSlider{
+        width: 100%;
+        position: relative;
+    }
+    .readycontact{
+        position: relative;
+        padding: 65px 60px 50px;
+    }
+    .socialLink{
+        transform: none;
+        top: 40px;
+        z-index: 2;
+    }
+    .socialLink a:last-of-type{
+        margin-right: 0;
+    }
+    .readycontact .common_btn{
+        width: 178px;
+    }
+    .discover_yoox{
+        padding-left: 0;
+    }
+    .discover_content{
+        left: 0;
+    }
+    .dy_img1{
+        right: 0;
+    }
+    .box_inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .abci_content{
+        padding: 40px 0px 27px 50px;
+    }
+    .abc_inner{
+        margin-top: -160px;
+    }
+    .abc_btn_col {
+        padding-top: 215px;
+    }
+    .teamSkills{
+        margin-bottom: 50px;
+    }
+    .subscripform{
+        padding: 50px 20px;
+    }
+    .lbi_details{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .lbi_details .lbid_date{
+        left: 30px;
+    }
+    .readysection .section_title{
+        font-size: 48px;
+    }
+    .gmap{
+        height: 500px;
+    }
+    .rightjoin, .leftjoin{
+        padding: 0;
+    }
+    .rightjoin h2, .leftjoin h2{
+        margin-top: 50px;
+    }
+    .rightjoin .common_btn, .leftjoin .common_btn{
+        margin-bottom: 50px;
+    }
+    .leftjoin .pdLeft_50, 
+    .rightjoin .pdLeft_50{
+        padding-right: 100px;
+    }
+
+    .singleFolioDetail h3{
+        margin-bottom: 15px;
+    }
+    .singleFolioDetail p{
+        margin-bottom: 15px;
+    }
+    .singleFolioDetail .singleIteamPro{
+        margin-bottom: 10px;
+    }
+    .sidebar .widget{
+        padding: 50px 20px;
+    }
+    .post_author{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .post_author h3{
+        margin-bottom: 25px;
+    }
+    .tp-bullets.custom.horizontal.nav-pos-hor-right{
+        left: auto !important;
+        right: 70px;
+    }
+    .logo2{
+        left: 20px;
+    }
+    .popUp_social{
+        right: 20px;
+    }  
+    .portfolioPopUp .container{
+        width: 800px;
+    }
+    .folio_slider{
+        margin-top: 1px;
+    }
+    .folio_slider .owl-nav .owl-prev, 
+    .folio_slider .owl-nav .owl-next{
+        width: 40px;
+        height: 40px;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .portdescrip{
+        padding-left: 30px;
+    }
+    .portdescrip .common_btn{
+        height: 80px;
+        padding: 32px 0;
+        margin-left: 1px;
+    }
+    .portdescrip span{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .portdescrip h3{
+        font-size: 24px;
+    }
+    .fixednavHeader{
+        right: 20px;
+    }
+    .fixednavHeader li a span{
+        letter-spacing: 1px;
+    }
+    .home_content{
+        padding: 0 50px;
+    }
+    .singleAB{
+        margin-bottom: 35px;
+    }
+    .home_content h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .story_content{
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+    .story_content h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .whatDo_content{
+        padding-right: 40px;
+    }
+    .whatDo_content h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .whoare_content h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .whoare_content p{
+        padding: 0 50px;
+    }
+
+}
+
+
+/*---------------------------------------------------------------------------------------------------------
+/ 4. Responsive For large Device. like: laptop and other large screen those have minimum 1200px resolution
+-----------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1440px){
+
+    .rightjoin, .leftjoin{
+        padding-right: 50px;
+    }
+    .rightjoin .common_btn,
+    .leftjoin .common_btn {
+        margin-bottom: 30px;
+    }
+    .rightjoin h2, .leftjoin h2{
+        margin-top: 47px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .slider .responsiveClass{
+        font-size: 80px !important;
+        line-height: 80px !important;
+        margin-top: 50px !important;
+    }
+    .slider_2 .responsiveClass_2{
+        font-size: 80px !important;
+        line-height: 80px !important;
+        margin-top: 50px !important;
+    }
+    .sidebarSlider{
+        width: 220px;
+    }
+    .readycontact{
+        padding: 0px 20px 35px;
+    }
+    .socialLink{
+        width: 100%;
+        top: 200px;
+        right: 8px;
+    }
+    .socialLink a {
+        margin-right: 0;
+        float: left;
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: .8;
+    }
+    .socialLink a:last-of-type{
+        margin-right: 0;
+    }
+    .readycontact h2{
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }  
+    .tp-bullets.custom .tp-bullet{
+        bottom: 90px;
+    }  
+    .portfolioPopUp .container{
+        width: 970px;
+    }
+    .folio_slider{
+        margin-top: 1px;
+    }
+    .folio_slider .owl-nav .owl-prev, 
+    .folio_slider .owl-nav .owl-next{
+        width: 40px;
+        height: 40px;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .portdescrip .common_btn{
+        height: 80px;
+        padding: 32px 0;
+        margin-left: 1px;
+    }
+    .portdescrip span{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .portdescrip h3{
+        font-size: 24px;
+    }
+    .home_content,
+    .story_content {
+        padding: 0 100px;
+    }
+    .home_content h5{
+        margin-bottom: 25px;
+    }
+    .home_content h2 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+    .singleAB{
+        margin-bottom: 35px;
+    }
+    .singleAB h2{
+        font-size: 70px;
+        line-height: 60px; 
+    }
+    .story_content{
+        margin-bottom: 50px;
+        padding: 0 130px;
+    }
+    .story_content h2 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+    .whatDo_content{
+        padding-right: 100px;
+    }
+    .whatDo_content h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .whoare_content h2{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+    .whoare_content p{
+        padding: 0 160px;
+        margin-bottom: 30px;
+    }
+
+}
+/*-------------------------------------------------------------------------------------------------------------
+/ 4.a. Responsive For large Device 02. like: laptop and other large screen those have minimum 1200px resolution
+---------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1340px){
+    .rightjoin h2, .leftjoin h2{
+        margin-top: 22px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .tp-bullets.custom.horizontal.nav-pos-hor-right{
+        left: auto !important;
+        right: 70px;
+    }
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+/ 5. Responsive For Extra large Device. like: large screen those have minimum 1441px resolution
+--------------------------------------------------------------------------------------------------*/
+@media (min-width: 1441px) and (max-width: 1800px){
+    .portfolioPopUp .container{
+        width: 970px;
+    }
+    .folio_slider .owl-nav .owl-prev, 
+    .folio_slider .owl-nav .owl-next{
+        width: 40px;
+        height: 40px;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .portdescrip .common_btn{
+        height: 80px;
+        padding: 32px 0;
+        margin-left: 1px;
+    }
+    .portdescrip span{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .portdescrip h3{
+        font-size: 24px;
+    }
+    .rightjoin, .leftjoin{
+        padding-right: 50px;
+    }
+    .rightjoin .common_btn,
+    .leftjoin .common_btn {
+        margin-bottom: 30px;
+    }
+    .rightjoin h2, .leftjoin h2{
+        margin-top: 77px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .sidebarSlider{
+        width: 250px;
+    }
+    .readycontact{
+        padding: 0 20px 30px;
+    }
+    .socialLink a{
+        margin: 0 15px 0 0;
+    }
+    .socialLink{
+        top: 215px;
+    }
+}
